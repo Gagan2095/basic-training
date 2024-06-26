@@ -1,0 +1,30 @@
+mkdir gitAssignment
+cd gitAssignment
+git init
+git remote add origin https://github.com/Gagan2095/i-am-a-git-noob.git
+git config –list
+git config user.name “Gagan Vishwakarma”
+git config user.email “gvishwakarma@qodeleaf.com”
+echo "first line in file" >> test1.txt
+git status
+git add .
+git commit -m “Initial commit”
+git push origin main
+echo "second line in file" in "test1.txt" >> test1.txt
+git add test1.txt
+git status
+echo "Third line in file" >> test1.txt
+git reset HEAD -- test1.txt 
+git commit -a -m "My First Commit"
+git push origin main
+git commit --amend
+git push –force origin main
+echo "Fourth line in file" >> test1.txt
+echo "Fifth line in file" >> test1.txt 
+git add .
+git commit –amend
+git push origin main
+echo "I am updating this file" >> test1.txt
+git pull origin main
+
+git clone https://github.com/Gagan2095/i-am-a-git-noob.git
